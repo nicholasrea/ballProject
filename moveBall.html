@@ -35,13 +35,13 @@ function moveBall(){
   if (reverseY){  
     positionY = positionY + velocityY;
   } else {
-    positionY =positionY - velocityY;
+    positionY = positionY - velocityY;
   }
 
   ball.style.left = positionX + 'px';
   ball.style.top = positionY + 'px';
 
-  if(positionX >= boundaryX){
+  if (positionX >= boundaryX){
     reverseX = !reverseX;
     ball.style.background = 'blue';
   } else if (positionX <= 0){
@@ -49,10 +49,10 @@ function moveBall(){
     ball.style.background = 'green';
   } 
 
-  if(positionY >= boundaryY){
+  if (positionY >= boundaryY){
     reverseY = !reverseY;
     ball.style.background = 'red';
-  } else if(positionY <= 0){
+  } else if (positionY <= 0){
     reverseY = !reverseY;
     ball.style.background = 'purple';
   }
